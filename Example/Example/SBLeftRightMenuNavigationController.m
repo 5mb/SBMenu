@@ -29,11 +29,12 @@
     _leftMenuController.adjustsStatusBar = YES;
     menu.menuController = _leftMenuController;
     
-    menu = [self.storyboard instantiateViewControllerWithIdentifier:@"menu"];
+    UINavigationController *navmenu = [self.storyboard instantiateViewControllerWithIdentifier:@"navmenu"];
+    menu = (MenuTableViewController *)navmenu.topViewController;
     
-    self.rightMenuController = [[SBMenuController alloc] initWithViewController:menu presentationStyle:SBMenuPresentationStyleSlideFromRight];
+    self.rightMenuController = [[SBMenuController alloc] initWithViewController:navmenu presentationStyle:SBMenuPresentationStyleSlideFromRight];
     _rightMenuController.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
-    _rightMenuController.adjustsStatusBar = YES;
+    _rightMenuController.adjustsStatusBar = NO;
     menu.menuController = _rightMenuController;
     
     // Add PanGesture to Show SideBar by PanGesture

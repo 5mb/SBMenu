@@ -21,6 +21,8 @@
 		DF7E94F51CA2429B0064698B /* TopBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7E94EE1CA2429B0064698B /* TopBottomViewController.m */; };
 		DF7E94FD1CA245A70064698B /* SBMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E94FC1CA245910064698B /* SBMenu.framework */; };
 		DF7E94FE1CA245A70064698B /* SBMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E94FC1CA245910064698B /* SBMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFB9D6331D5511650046E86A /* RightMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9D6321D5511650046E86A /* RightMenuTableViewController.m */; };
+		DFB9D6361D551A430046E86A /* SecondRightMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9D6351D551A430046E86A /* SecondRightMenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		DF7E94ED1CA2429B0064698B /* TopBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBottomViewController.h; sourceTree = "<group>"; };
 		DF7E94EE1CA2429B0064698B /* TopBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBottomViewController.m; sourceTree = "<group>"; };
 		DF7E94F71CA245910064698B /* SBMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBMenu.xcodeproj; path = ../SBMenu/SBMenu.xcodeproj; sourceTree = "<group>"; };
+		DFB9D6311D5511650046E86A /* RightMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuTableViewController.h; sourceTree = "<group>"; };
+		DFB9D6321D5511650046E86A /* RightMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuTableViewController.m; sourceTree = "<group>"; };
+		DFB9D6341D551A430046E86A /* SecondRightMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondRightMenuTableViewController.h; sourceTree = "<group>"; };
+		DFB9D6351D551A430046E86A /* SecondRightMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondRightMenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				DF7E94E41CA2429B0064698B /* LeftRightViewController.m */,
 				DF7E94E51CA2429B0064698B /* MenuTableViewController.h */,
 				DF7E94E61CA2429B0064698B /* MenuTableViewController.m */,
+				DFB9D6311D5511650046E86A /* RightMenuTableViewController.h */,
+				DFB9D6321D5511650046E86A /* RightMenuTableViewController.m */,
+				DFB9D6341D551A430046E86A /* SecondRightMenuTableViewController.h */,
+				DFB9D6351D551A430046E86A /* SecondRightMenuTableViewController.m */,
 				DF7E94E71CA2429B0064698B /* PopViewController.h */,
 				DF7E94E81CA2429B0064698B /* PopViewController.m */,
 				DF7E94E91CA2429B0064698B /* SBLeftRightMenuNavigationController.h */,
@@ -242,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7E94CB1CA2408D0064698B /* AppDelegate.m in Sources */,
+				DFB9D6361D551A430046E86A /* SecondRightMenuTableViewController.m in Sources */,
 				DF7E94F01CA2429B0064698B /* LeftRightViewController.m in Sources */,
 				DF7E94C81CA2408D0064698B /* main.m in Sources */,
 				DF7E94F41CA2429B0064698B /* SBTopBottomMenuNavigationController.m in Sources */,
@@ -249,6 +260,7 @@
 				DF7E94F11CA2429B0064698B /* MenuTableViewController.m in Sources */,
 				DF7E94EF1CA2429B0064698B /* FixedHeightNavigationBar.m in Sources */,
 				DF7E94F31CA2429B0064698B /* SBLeftRightMenuNavigationController.m in Sources */,
+				DFB9D6331D5511650046E86A /* RightMenuTableViewController.m in Sources */,
 				DF7E94F51CA2429B0064698B /* TopBottomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
