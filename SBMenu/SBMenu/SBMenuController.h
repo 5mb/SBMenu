@@ -21,7 +21,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong, readonly, nonnull) UIView *containerView; // contains the presented view controller's view.
 @property (nonatomic, strong, readonly, nullable) UIView *contentBackgroundView; //default one has the shadow
 @property (nonatomic, strong, readonly, nonnull) UIViewController *contentViewController; // to be presented.
-@property (nonatomic, weak, readonly) UIViewController *presentingViewController;
+@property (nonatomic, weak, readonly, nullable) UIViewController *presentingViewController;
 @property (nonatomic, strong, readonly, nonnull) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong, readonly, nonnull) UIPanGestureRecognizer *panGestureRecognizer;
 @property (nonatomic, assign) BOOL showShadow; // Default: YES // Shadow will be applied on content background view, If yes then background view is lazily created.
@@ -32,6 +32,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) BOOL adjustsStatusBar; // Just request to update status bar with animation!
 @property (nonatomic, strong, nullable) UIColor *backgroundColor;
 @property (nonatomic, assign, readonly, getter=isVisible) BOOL visible;
+@property (nonatomic, copy, nullable) void (^onCompletion)(void);
            
 - (nonnull instancetype)initWithViewController:(nonnull UIViewController *)viewController presentationStyle:(SBMenuPresentationStyle)style; // view controller to be presented.
 - (void)handleMenuPanGesture:(nonnull UIPanGestureRecognizer *)gesture inViewController:(nonnull UIViewController *)viewController;

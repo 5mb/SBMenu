@@ -117,6 +117,7 @@
 
 - (void)presentInViewController:(nonnull UIViewController *)viewController animated:(BOOL)animated completion:(void (^ __nullable)(void))completion {
     [self addInViewController:viewController];
+    [_contentViewController beginAppearanceTransition:YES animated:animated];
     
     void (^block)(void) = ^void(void) {
         self.containerView.backgroundColor = self.backgroundColor;
@@ -125,6 +126,7 @@
         _contentViewController.view.alpha = 1.0f;
         _contentBackgroundView.alpha = 1.0f;
         _contentBackgroundView.layer.shadowOpacity = _backgroundColorAlpha;
+        [_contentViewController endAppearanceTransition];
     };
     if (animated) {
         [UIView animateWithDuration:_animationDuration delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:block completion:^(BOOL finished) {
@@ -184,6 +186,8 @@
     }
     _visible = YES;
     
+    
+    
     if (self.adjustsStatusBar) {
         // Update the status bar
         [self updateStatusBarInViewController:viewController];
@@ -191,7 +195,12 @@
 }
 
 - (void)dismissAnimated:(BOOL)animated {
-    [self dismissAnimated:animated completion:nil];
+    if (self.onCompletion) {
+        [self dismissAnimated:animated completion:self.onCompletion];
+    }
+    else {
+        [self dismissAnimated:animated completion:nil];
+    }
 }
 
 - (void)dismissAnimated:(BOOL)animated completion:(void (^ __nullable)(void))completion {
