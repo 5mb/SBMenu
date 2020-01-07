@@ -1,4 +1,4 @@
-# SBMenu
-[![Build Status](https://travis-ci.org/5mb/SBMenu.svg?branch=master)](https://travis-ci.org/5mb/SBMenu)
+# SBSideMenu
+[![Build Status](https://travis-ci.org/smbhuin/SBSideMenu.svg?branch=master)](https://travis-ci.org/smbhuin/SBSideMenu)
 
-A simple side-menu/popup-menu that can virtually present anything!
+A simple Side Menu for iOS Apps that can virtually present anything!
