@@ -3,3 +3,4 @@ osx_image: xcode10.3
 xcode_project: SBSideMenu.xcodeproj
 xcode_scheme: SBSideMenu
 xcode_sdk: xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
