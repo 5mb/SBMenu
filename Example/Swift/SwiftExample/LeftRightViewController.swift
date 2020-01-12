@@ -21,9 +21,7 @@ class LeftRightViewController: UIViewController {
     }
     
     @IBAction func btnRightAction(_ sender: Any) {
-        if let nvc = self.navigationController as? SBLeftRightMenuNavigationController {
-            nvc.showRightMenu(animated: true)
-        }
+        self.menuNavigationController?.showRightMenu(animated: true)
     }
     
     @IBAction func btnDoneAction(_ sender: Any) {

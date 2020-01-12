@@ -117,6 +117,11 @@ class SBLeftRightMenuNavigationController: UINavigationController {
     func isRightMenuVisible() -> Bool {
         return self.rightMenuController?.isVisible ?? false
     }
-    
-    
+
+}
+
+extension UIViewController {
+    var menuNavigationController: SBLeftRightMenuNavigationController? {
+        return self.navigationController as? SBLeftRightMenuNavigationController
+    }
 }
